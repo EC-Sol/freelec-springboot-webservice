@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-Application<freelec-springboot-webservice>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.aws.book.springboot.Application",
+            "projectName": "freelec-springboot-webservice",
+            "args": ""
+        }
+    ]
+}
