@@ -5,6 +5,10 @@ var main = {
             _this.save();
         });
 
+        $('#btn-modify').on('click', function () {
+            _this.modify();
+        });
+
         $('#btn-update').on('click', function () {
             _this.update();
         });
@@ -35,7 +39,16 @@ var main = {
         });
     },
 
-    update: function () {
+    modify: function () {
+        $('#title').attr('readonly', false);
+        $('#author').attr('readonly', false);
+        $('#btn-modify').text('수정완료');
+        $('#btn-modify').attr('id', 'btn-update');
+        $('#content').attr('disabled', false);
+        this.init();               
+    },
+
+    update: function () {        
         var data = {
             title: $('#title').val(),
             content: $('#content').val()
